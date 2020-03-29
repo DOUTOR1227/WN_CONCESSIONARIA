@@ -5,6 +5,7 @@
  */
 package veiw;
 
+import classes.WN_peças;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,7 +32,7 @@ public class WN_form_peças extends JPanel implements ActionListener {
    JLabel label = new JLabel("form_peças"); 
       JLabel lbestoque =new JLabel("estoque:");  
       JLabel lbmodelo =new JLabel("modelo:");     
-       JLabel lbtempodeuso =new JLabel("tempo de uso");    
+       JLabel lbtempodeuso =new JLabel("tempo de uso (dias)");    
   JLabel lbusada =new JLabel("usada");  
        JLabel lbpreço =new JLabel("preço");  
       
@@ -62,14 +63,16 @@ public class WN_form_peças extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
 
-    String valor_estoque=estoque.getText();
+    int valor_estoque=Integer.parseInt(estoque.getText()) ;
     String valor_modelo=modelo.getText();
     String valor_usada=usada.getText();
-    String valor_tempodeuso=tempodeuso.getText();
-    String valor_preço=preço.getText();
+    int valor_tempodeuso=Integer.parseInt( tempodeuso.getText());
+    double valor_preço=Double.parseDouble( preço.getText());
     
-    String texto="estoque: "+valor_estoque+"\n modelo: "+valor_modelo+"\n usada: "+valor_usada+
-    "\n tempo de uso: "+valor_tempodeuso+"\n preço: "+valor_preço;
+    WN_peças peça =new WN_peças(valor_estoque, valor_preço,valor_usada, valor_tempodeuso, valor_modelo);
+    
+    String texto="estoque: "+peça.getwn_estoque()+"\n modelo: "+peça.getwn_modelo()+"\n usada: "+peça.getwn_usada()+
+    "\n tempo de uso: "+peça.getwn_tempodeuso()+"\n preço: "+peça.getwn_preço();
     
     
     

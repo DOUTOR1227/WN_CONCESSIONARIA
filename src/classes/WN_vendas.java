@@ -20,7 +20,7 @@ public void setwn_Nvendasdia(int wnvendasdia){
 this.wn_Nvendasdia=wnvendasdia;
 }
 
-public int geten_Nvendasdia(){
+public int getwn_Nvendasdia(){
 return this. wn_Nvendasdia;
 }
 
@@ -45,7 +45,7 @@ public int getwn_Nvendasmes(){
 return this.wn_Nvendasmes;
 }
 
-public int wn_Nvendasano(){
+public int getwn_Nvendasano(){
 return this.wn_Nvendasano;
 
 }
@@ -57,7 +57,20 @@ return this.wn_preço-100;
 }
 
 
+public WN_vendas(int vendasdia, int vendasmes, int vendasano, double preço, int estoque){
+this.wn_Nvendasano=vendasano;
+this.wn_Nvendasdia=vendasdia;
+this.wn_Nvendasmes=vendasmes;
+this.wn_estoque=estoque;
+this.wn_preço=preço;
 
+
+
+
+
+
+
+}
 
 
 

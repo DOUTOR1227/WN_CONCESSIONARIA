@@ -57,7 +57,16 @@ public String getwn_modelo(){
 return this.wn_modelo;
 }
 
+public WN_peças(int estoque, double preço, String usada, int tempodeuso, String modelo){
+this.wn_estoque=estoque;
+this.wn_modelo=modelo;
+this.wn_preço=preço;
+this.wn_tempodeuso=tempodeuso;
+this.wn_usada=usada;
 
+
+
+}
 
 
 

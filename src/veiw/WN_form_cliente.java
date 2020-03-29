@@ -41,7 +41,7 @@ public class WN_form_cliente extends JPanel implements ActionListener{
      
      nome= new JTextField(10);
   renda= new JTextField(10);
-  cpf= new JTextField(10);
+  cpf= new JTextField(11);
   rg= new JTextField(10);
   endereço= new JTextField(10);
   score= new JTextField(10);

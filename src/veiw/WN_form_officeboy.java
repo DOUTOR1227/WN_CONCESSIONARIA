@@ -5,6 +5,7 @@
  */
 package veiw;
 
+import classes.WN_officeboy;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,7 +27,7 @@ public class WN_form_officeboy extends JPanel implements ActionListener {
    private JTextField HT;
    private JTextField saldo;
    private JTextField cpf;
-   private JTextField FGTS;
+   
    private JTextField horaextra;
     
     
@@ -41,7 +42,7 @@ public class WN_form_officeboy extends JPanel implements ActionListener {
        JLabel lbcpf = new JLabel("cpf:");  
         JLabel lbsaldo=new JLabel("saldo:");
          JLabel lbhoraextra = new JLabel("horaextra:");  
-   JLabel lbFGTS = new JLabel("FGTS:"); 
+    
         
         nome=new JTextField(10);  
  saldo=new JTextField(10); 
@@ -50,7 +51,6 @@ public class WN_form_officeboy extends JPanel implements ActionListener {
  horaextra=new JTextField(10); 
  usuario=new JTextField(10);
  senha=new JTextField(10);
-FGTS= new JTextField(10);
  botao=new JButton("exibir");
  botao.addActionListener(this);
  
@@ -68,9 +68,7 @@ FGTS= new JTextField(10);
    add(usuario);
    add(lbsenha);
    add(senha);
-   add(lbFGTS);
-   add(FGTS);
-add(botao);
+  add(botao);
 add(label);
     
     
@@ -82,22 +80,21 @@ add(label);
     public void actionPerformed(ActionEvent ae) {
       
      String valor_nome = nome.getText();
-        String valor_saldo= saldo.getText();
-     String valor_HT= HT.getText();
-        String valor_cpf= cpf.getText();
-          String valor_horaextra= horaextra.getText();
-         String valor_FGTS = FGTS.getText();
-          String valor_usuario= usuario.getText();
+        double valor_saldo=Double.parseDouble(saldo.getText()) ;
+     int valor_HT=Integer.parseInt(HT.getText() );
+        int valor_cpf=Integer.parseInt(cpf.getText()) ;
+          double valor_horaextra=Double.parseDouble(horaextra.getText()) ;
+                  String valor_usuario= usuario.getText();
           String valor_senha= senha.getText();
          
        
         
+       WN_officeboy off =new WN_officeboy(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra,valor_usuario,valor_senha); 
         
-        
-     String texto = "nome: "+valor_nome+"\n saldo: "+valor_saldo+
-     "\n horas trabalhadas: "+valor_HT+"\n cpf: " + valor_cpf+
-      "\n horaextra: "+valor_horaextra+"\n usuario: "+valor_usuario+
-       "\n senha: "+valor_senha+"\n FGTS: "+valor_FGTS;       
+     String texto = "nome: "+off.getwn_nome()+"\n saldo: "+off.getwn_saldo()+
+     "\n horas trabalhadas: "+off.getwn_HT()+"\n cpf: " +off.getwn_cpf()+
+      "\n horaextra: "+off.getwn_horaextra()+"\n usuario: "+off.getwn_usuario()+
+       "\n senha: "+off.getwn_senha()+"\n FGTS: "+off.getwn_FGTS();       
      
      
      

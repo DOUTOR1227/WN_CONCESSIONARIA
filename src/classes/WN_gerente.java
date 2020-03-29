@@ -43,9 +43,9 @@ public int getwn_telefone(){
  return this.wn_telefone;   
 }
 
+ 
 
-
-public WN_gerente(String n, double s, double ht, int cpf, double hx, String u, String se, int telefone){
+public WN_gerente(String n, double s, int ht, int cpf, double hx, String u, String se, int telefone){
 this.wn_nome=n;
 this.wn_saldo=s;
 this.wn_telefone=telefone;

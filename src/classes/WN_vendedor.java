@@ -18,7 +18,7 @@ public class WN_vendedor extends WN_funcionarios {
    return this.wn_horaextra=this.wn_saldo+(this.wn_saldo*50)/100;
     }   
 
-WN_vendedor(String n, double s, double ht, int cpf, double hx){
+WN_vendedor(String n, double s, int ht, int cpf, double hx){
 this.wn_nome=n;
 this.wn_saldo=s;
 this.wn_HT=ht;

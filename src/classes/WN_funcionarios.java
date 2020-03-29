@@ -12,7 +12,7 @@ package classes;
 public abstract class WN_funcionarios {
    protected String wn_nome;
    protected double wn_saldo;
-   protected double wn_HT;
+   protected int wn_HT;
    protected int wn_cpf;
    protected double wn_horaextra;
    protected double wn_FGTS;
@@ -33,10 +33,10 @@ public abstract class WN_funcionarios {
    this.wn_saldo=wnsaldo;
    }
    public double getwn_saldo(){
-   return this.wn_saldo- wn_FGTS+wn_horaextra;
+   return this.wn_saldo- wn_FGTS+wn_h_extra();
    }
  
-   public void setwn_HT(double wnHT){
+   public void setwn_HT(int wnHT){
    this.wn_HT=wnHT;
    }
    public double getwn_HT(){

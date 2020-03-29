@@ -30,7 +30,6 @@ public class WN_form_gerente extends JPanel implements ActionListener {
    private JTextField HT;
    private JTextField saldo;
    private JTextField cpf;
-   private JTextField FGTS;
    private JTextField horaextra;
      
    
@@ -46,7 +45,7 @@ public WN_form_gerente(){
        JLabel lbcpf = new JLabel("cpf:");  
         JLabel lbsaldo=new JLabel("saldo:");
          JLabel lbhoraextra = new JLabel("horaextra:");  
-   JLabel lbFGTS = new JLabel("FGTS:");
+
          
          nome = new JTextField(10);
     
@@ -55,11 +54,11 @@ public WN_form_gerente(){
      telefone = new JTextField(10);
  HT = new JTextField(10);
 
-FGTS =  new JTextField(10);
+
  saldo = new JTextField(10);
  
  cpf = new JTextField(10);
-FGTS = new JTextField(10);
+
  horaextra = new JTextField(10);
 
     botao=new JButton("exibir");
@@ -82,8 +81,7 @@ FGTS = new JTextField(10);
    add(senha);
    add(lbtelefone);
    add(telefone);
-   add(lbFGTS);
-   add(FGTS);
+ 
 add(botao);
 add(label);
 }
@@ -93,10 +91,10 @@ add(label);
     public void actionPerformed(ActionEvent ae) {
       String valor_nome = nome.getText();
         double valor_saldo=Double.parseDouble(saldo.getText()) ;
-     double valor_HT=Double.parseDouble(HT.getText()) ;
+     int valor_HT=Integer.parseInt(HT.getText()) ;
         int valor_cpf=Integer.parseInt(cpf.getText()) ;
           double valor_horaextra=Double.parseDouble( horaextra.getText());
-         double valor_FGTS =Double.parseDouble( FGTS.getText());
+    
           String valor_usuario= usuario.getText();
           String valor_senha=senha.getText() ;
          int valor_telefone=Integer.parseInt(telefone.getText());
@@ -110,7 +108,7 @@ add(label);
      "\n horas trabalhadas: "+gerente.getwn_HT()+"\n cpf: " +gerente.getwn_cpf()+
       "\n horaextra: "+gerente.getwn_horaextra()+"\n usuario: "+gerente.getwn_usuario()+
        "\n senha: "+gerente.getwn_senha()+"\ntelefone: "+gerente.getwn_telefone()+
-             "\n FGTS: "+valor_FGTS;       
+             "\n FGTS: "+gerente.getwn_FGTS();       
      
      
      

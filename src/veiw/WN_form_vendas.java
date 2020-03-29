@@ -5,6 +5,7 @@
  */
 package veiw;
 
+import classes.WN_vendas;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -60,14 +61,16 @@ add(label);
     @Override
     public void actionPerformed(ActionEvent ae) {
     
-    String valor_vendasdia= vendasdia.getText();
-    String valor_vendasmes= vendasmes.getText();
-    String valor_vendasano= vendasano.getText();
-    String valor_preço= preço.getText();
-    String valor_estoque= estoque.getText();
+    int valor_vendasdia=Integer.parseInt(vendasdia.getText() );
+    int valor_vendasmes=Integer.parseInt(vendasmes.getText() );
+    int valor_vendasano= Integer.parseInt(vendasano.getText() );
+    double valor_preço=Double.parseDouble(preço.getText()) ;
+    int valor_estoque= Integer.parseInt(estoque.getText() );
     
-    String texto = "vendas por dia: "+valor_vendasdia+"\n vendas por mes: "+valor_vendasmes
-    +"\n numero de vendas por ano: "+valor_vendasano+"\n preço: "+valor_preço+"\n estoque: "+valor_estoque;
+    WN_vendas vendas = new WN_vendas(valor_vendasdia,valor_vendasmes,valor_vendasano,valor_preço,valor_estoque);
+    
+    String texto = "vendas por dia: "+vendas.getwn_Nvendasdia()+"\n vendas por mes: "+vendas.getwn_Nvendasmes()
+    +"\n numero de vendas por ano: "+vendas.getwn_Nvendasano()+"\n preço: "+vendas.getwn_preço()+"\n estoque: "+vendas.getwn_estoque();
     
     JOptionPane.showMessageDialog(null, texto);
     

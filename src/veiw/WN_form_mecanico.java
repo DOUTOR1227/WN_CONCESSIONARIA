@@ -5,6 +5,7 @@
  */
 package veiw;
 
+import classes.WN_mecanico;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,8 +23,7 @@ public class WN_form_mecanico extends JPanel implements ActionListener {
   private JButton botao;
    private JTextField nome; 
      private JTextField saldo; 
-     private JTextField FGTS; 
-     private JTextField HT; 
+ private JTextField HT; 
       private JTextField cpf; 
       private JTextField horaextra; 
      private JTextField telefone; 
@@ -36,7 +36,7 @@ setLayout(new GridLayout(8,1));
         
    JLabel lbnome = new JLabel("nome:");   
  JLabel lbtelefone = new JLabel("telefone:");  
- JLabel lbFGTS = new JLabel("FGTS:");    
+   
  JLabel lbHT = new JLabel("horas trabalhadas:");  
        JLabel lbcpf = new JLabel("cpf:");  
         JLabel lbsaldo=new JLabel("saldo:");
@@ -50,7 +50,7 @@ setLayout(new GridLayout(8,1));
  HT=new JTextField(10); 
  cpf=new JTextField(10); 
  telefone = new JTextField(10);
- FGTS = new JTextField(10);
+ 
  horaextra=new JTextField(10);  
 botao = new JButton("exibir");
 botao.addActionListener(this);
@@ -63,8 +63,8 @@ botao.addActionListener(this);
     add(telefone);
     add(lbHT);
     add(HT);
-    add(lbFGTS);
-    add(FGTS);
+    
+    
     add(lbcpf);
     add(cpf);
    add(lbhoraextra);
@@ -83,15 +83,16 @@ botao.addActionListener(this);
     public void actionPerformed(ActionEvent ae) {
    
         String valor_nome = nome.getText();
-        String valor_telefone= telefone.getText();
-        String valor_saldo= saldo.getText();
-     String valor_HT= HT.getText();
-        String valor_cpf= cpf.getText();
-          String valor_horaextra= horaextra.getText();
-         String valor_FGTS = FGTS.getText();   
+        int valor_telefone=Integer.parseInt(telefone.getText()) ;
+        double valor_saldo=Double.parseDouble( saldo.getText());
+     int valor_HT=Integer.parseInt(HT.getText()) ;
+        int valor_cpf=Integer.parseInt(cpf.getText()) ;
+          double valor_horaextra=Double.parseDouble(horaextra.getText()); ;
+      
         
-        String texto = "nome: "+valor_nome+"\n saldo: "+valor_saldo+"\ntelefone: "+valor_telefone+
-        "\n horas trabalhadas: "+valor_HT+"\n FGTS:"+valor_FGTS+"\ncpf: "+valor_cpf+"\n hora extra: "+valor_horaextra;
+        WN_mecanico mecanico = new WN_mecanico(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra,valor_telefone);
+         String texto = "nome: "+mecanico.getwn_nome()+"\n saldo: "+mecanico.getwn_saldo()+"\ntelefone: "+mecanico.getwn_telefone()+
+        "\n horas trabalhadas: "+mecanico.getwn_HT()+"\n FGTS:"+mecanico.getwn_FGTS()+"\ncpf: "+mecanico.getwn_cpf()+"\n hora extra: "+mecanico.getwn_horaextra();
     
     JOptionPane.showMessageDialog(null, texto);  
     
