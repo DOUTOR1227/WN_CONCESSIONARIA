@@ -20,7 +20,7 @@ package classes;
 public class WN_cliente {
     
 private String wn_nome;
-private int wn_cpf;
+private String wn_cpf;
 private int wn_rg;
 private String wn_endereço;
 private double wn_renda;
@@ -35,12 +35,12 @@ public String getwn_nome(){
 return this.wn_nome;
 }
 
-public void setwn_cpf(int  wncpf){
+public void setwn_cpf(String wncpf){
 this.wn_cpf= wncpf;
 
 }
 
-public int getwn_cpf(){
+public String getwn_cpf(){
 return this.wn_cpf;
 }
 
@@ -110,7 +110,7 @@ if(this.wn_renda<3000){
 }
 
 
-public WN_cliente(String nome, int cpf, int rg, String endereço, double renda, int score){
+public WN_cliente(String nome, String cpf, int rg, String endereço, double renda, int score){
 this.wn_nome=nome;
 this.wn_cpf=cpf;
 this.wn_rg=rg;

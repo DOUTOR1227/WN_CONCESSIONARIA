@@ -13,7 +13,7 @@ public abstract class WN_funcionarios {
    protected String wn_nome;
    protected double wn_saldo;
    protected int wn_HT;
-   protected int wn_cpf;
+   protected String wn_cpf;
    protected double wn_horaextra;
    protected double wn_FGTS;
    
@@ -43,11 +43,11 @@ public abstract class WN_funcionarios {
    return this.wn_HT;
    }
    
-   public void setwn_cpf(int wncpf){
+   public void setwn_cpf(String wncpf){
    this.wn_cpf=wncpf;
    }
    
-   public int getwn_cpf(){
+   public String getwn_cpf(){
    return this.wn_cpf;
    }
    

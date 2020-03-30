@@ -92,7 +92,7 @@ add(label);
       String valor_nome = nome.getText();
         double valor_saldo=Double.parseDouble(saldo.getText()) ;
      int valor_HT=Integer.parseInt(HT.getText()) ;
-        int valor_cpf=Integer.parseInt(cpf.getText()) ;
+        String valor_cpf=cpf.getText();
           double valor_horaextra=Double.parseDouble( horaextra.getText());
     
           String valor_usuario= usuario.getText();

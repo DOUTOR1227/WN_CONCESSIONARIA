@@ -40,7 +40,7 @@ return this.wn_senha;
 }
 
 
-public WN_officeboy(String n, double s, int ht, int cpf, double hx, String u, String se){
+public WN_officeboy(String n, double s, int ht, String cpf, double hx, String u, String se){
 this.wn_nome=n;
 this.wn_saldo=s;
 this.wn_HT=ht;

@@ -5,6 +5,7 @@
  */
 package veiw;
 
+import classes.WN_vendedor;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,7 +26,7 @@ public class WN_form_vendedor extends JPanel implements ActionListener{
    private JTextField HT;
    private JTextField saldo;
    private JTextField cpf;
-   private JTextField FGTS;
+  
    private JTextField horaextra;
     
     public WN_form_vendedor(){
@@ -36,13 +37,13 @@ public class WN_form_vendedor extends JPanel implements ActionListener{
        JLabel lbcpf = new JLabel("cpf:");  
         JLabel lbsaldo=new JLabel("saldo:");
          JLabel lbhoraextra = new JLabel("horaextra:");  
-       JLabel lbFGTS = new JLabel("FGTS:");
+      
          
          
          nome=new JTextField(10);  
       saldo=new JTextField(10); 
  HT=new JTextField(0); 
- FGTS = new JTextField(10);
+
  cpf=new JTextField(10); 
  horaextra=new JTextField(10); 
 botao = new JButton("exibir");
@@ -54,8 +55,7 @@ botao.addActionListener(this);
     add(saldo);
     add(lbHT);
     add(HT);
-    add(lbFGTS);
-    add(FGTS);
+   
     add(lbcpf);
     add(cpf);
     add(lbhoraextra);
@@ -70,14 +70,15 @@ botao.addActionListener(this);
     @Override
     public void actionPerformed(ActionEvent ae) {
      String valor_nome = nome.getText();
-        String valor_saldo= saldo.getText();
-     String valor_HT= HT.getText();
+        double valor_saldo=Double.parseDouble( saldo.getText());
+     int valor_HT=Integer.parseInt(HT.getText()) ;
         String valor_cpf= cpf.getText();
-          String valor_horaextra= horaextra.getText();
-         String valor_FGTS = FGTS.getText();  
+         double valor_horaextra=Double.parseDouble(horaextra.getText()) ;
+        
     
-    String texto = "nome: "+valor_nome+"\n saldo: "+valor_saldo+"\n horas trabalhadas: "+valor_HT+
-     "\n FGTS: "+valor_FGTS+"\n cpf: "+valor_cpf+"\n hora extra: "+valor_horaextra;
+    WN_vendedor vendedor=new WN_vendedor(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra);
+         String texto = "nome: "+vendedor.getwn_nome()+"\n saldo: "+vendedor.getwn_saldo()+"\n horas trabalhadas: "+vendedor.getwn_HT()+
+     "\n FGTS: "+vendedor.getwn_FGTS()+"\n cpf: "+vendedor.getwn_cpf()+"\n hora extra: "+vendedor.getwn_horaextra();
     
      JOptionPane.showMessageDialog(null, texto);
     

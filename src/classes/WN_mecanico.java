@@ -32,7 +32,7 @@ return this.wn_telefone;
    return this.wn_saldo=this.wn_saldo+(this.wn_saldo*50)/100;
     }
 
-public WN_mecanico(String n, double s, int ht, int cpf, double hx, int t){
+public WN_mecanico(String n, double s, int ht, String cpf, double hx, int t){
 this.wn_nome=n;
 this.wn_saldo=s;
 this.wn_HT=ht;

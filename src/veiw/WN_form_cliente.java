@@ -70,7 +70,7 @@ add(score);
     public void actionPerformed(ActionEvent ae) {
       String valor_nome=nome.getText();
       double valor_renda=Double.parseDouble(renda.getText());
-      int valor_cpf=Integer.parseInt(cpf.getText()) ;
+      String valor_cpf=cpf.getText() ;
       int valor_rg=Integer.parseInt(rg.getText());       
     int valor_score=Integer.parseInt(score.getText());
     String valor_endereço=endereço.getText();
