@@ -71,7 +71,7 @@ add(score);
       String valor_nome=nome.getText();
       double valor_renda=Double.parseDouble(renda.getText());
       String valor_cpf=cpf.getText() ;
-      int valor_rg=Integer.parseInt(rg.getText());       
+      String valor_rg=rg.getText();       
     int valor_score=Integer.parseInt(score.getText());
     String valor_endereço=endereço.getText();
     

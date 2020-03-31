@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 /**
@@ -23,7 +24,7 @@ public class WN_form_officeboy extends JPanel implements ActionListener {
      private JButton botao;
    private JTextField nome ;
     private JTextField usuario;
-   private JTextField senha;
+   private JPasswordField senha;
    private JTextField HT;
    private JTextField saldo;
    private JTextField cpf;
@@ -50,7 +51,7 @@ public class WN_form_officeboy extends JPanel implements ActionListener {
  cpf=new JTextField(10); 
  horaextra=new JTextField(10); 
  usuario=new JTextField(10);
- senha=new JTextField(10);
+ senha=new JPasswordField(10);
  botao=new JButton("exibir");
  botao.addActionListener(this);
  

@@ -21,7 +21,7 @@ public class WN_cliente {
     
 private String wn_nome;
 private String wn_cpf;
-private int wn_rg;
+private String wn_rg;
 private String wn_endereço;
 private double wn_renda;
 private int wn_score;
@@ -45,12 +45,12 @@ return this.wn_cpf;
 }
 
 
-public void setwn_rg(int  wnrg){
+public void setwn_rg(String wnrg){
 this.wn_rg= wnrg;
 
 }
 
-public int getwn_rg(){
+public String getwn_rg(){
 return this.wn_rg;
 }
 
@@ -110,7 +110,7 @@ if(this.wn_renda<3000){
 }
 
 
-public WN_cliente(String nome, String cpf, int rg, String endereço, double renda, int score){
+public WN_cliente(String nome, String cpf, String rg, String endereço, double renda, int score){
 this.wn_nome=nome;
 this.wn_cpf=cpf;
 this.wn_rg=rg;

@@ -15,6 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 /**
@@ -25,7 +26,7 @@ public class WN_form_gerente extends JPanel implements ActionListener {
    private JButton botao;
    private JTextField nome ;
     private JTextField usuario;
-   private JTextField senha;
+   private JPasswordField senha;
    private JTextField telefone;
    private JTextField HT;
    private JTextField saldo;
@@ -50,7 +51,7 @@ public WN_form_gerente(){
          nome = new JTextField(10);
     
      usuario = new JTextField(10);
-   senha = new JTextField(10);
+   senha = new JPasswordField(10);
      telefone = new JTextField(10);
  HT = new JTextField(10);
 
