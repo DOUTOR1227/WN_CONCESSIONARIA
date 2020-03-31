@@ -33,7 +33,17 @@ public abstract class WN_funcionarios {
    this.wn_saldo=wnsaldo;
    }
    public double getwn_saldo(){
-   return this.wn_saldo- wn_FGTS+wn_h_extra();
+   if(this.wn_horaextra!=0){
+    return this.wn_saldo-this.wn_FGTS;
+   
+   }else{
+   return this.wn_saldo-this.wn_FGTS+wn_h_extra();
+   
+   }
+       
+   
+   
+   
    }
  
    public void setwn_HT(int wnHT){

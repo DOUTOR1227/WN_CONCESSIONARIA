@@ -61,7 +61,8 @@ this.wn_FGTS=(this.wn_saldo*8)/100;
 
    
     
-    @Override
+   
+@Override
     public double wn_h_extra() {
    return this.wn_horaextra=this.wn_saldo+(this.wn_saldo*50)/100;
     }
