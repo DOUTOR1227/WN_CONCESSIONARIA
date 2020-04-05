@@ -109,7 +109,7 @@ add(label);
      "\n horas trabalhadas: "+gerente.getwn_HT()+"\n cpf: " +gerente.getwn_cpf()+
       "\n horaextra: "+gerente.getwn_horaextra()+"\n usuario: "+gerente.getwn_usuario()+
        "\n senha: "+gerente.getwn_senha()+"\ntelefone: "+gerente.getwn_telefone()+
-             "\n FGTS: "+gerente.getwn_FGTS();       
+             "\n FGTS: "+gerente.FGTS();       
      
      
      

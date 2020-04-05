@@ -54,7 +54,7 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_usuario=u;
 this.wn_senha=se;
-this.wn_FGTS=(6*5)/100;
+
 }
 
 
@@ -64,10 +64,14 @@ this.wn_FGTS=(6*5)/100;
    
 @Override
     public double wn_h_extra() {
-   return this.wn_horaextra=this.wn_saldo+(this.wn_saldo*50)/100;
+   return (6)*8/100;
     }
 
+public double FGTS(){ 
+return (this.wn_saldo*50)/100;
 
+
+}
 
 
 

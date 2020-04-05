@@ -29,7 +29,7 @@ return this.wn_telefone;
     
     @Override
     public double wn_h_extra() {
-   return this.wn_saldo=this.wn_saldo+(this.wn_saldo*50)/100;
+   return (6)*8/100;
     }
 
 public WN_mecanico(String n, double s, int ht, String cpf, double hx, int t){

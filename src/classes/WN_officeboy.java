@@ -16,7 +16,7 @@ public class WN_officeboy extends WN_funcionarios {
 
     @Override
     public double wn_h_extra() {
-       return this.wn_saldo=this.wn_saldo+(this.wn_saldo*50)/100;
+       return (6)*8/100;
     }
 
 public void setwn_usuario(String usuario){
@@ -48,7 +48,8 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_usuario=u;
 this.wn_senha=se;
-this.wn_saldo=(6*8)/100;
+this.wn_FGTS=(this.wn_saldo*10)/100;
+
 }
 
 
