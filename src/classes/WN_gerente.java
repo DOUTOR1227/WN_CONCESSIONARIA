@@ -54,7 +54,7 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_usuario=u;
 this.wn_senha=se;
-this.wn_FGTS=(this.wn_saldo*8)/100;
+this.wn_FGTS=(6*5)/100;
 }
 
 

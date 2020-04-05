@@ -48,7 +48,7 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_usuario=u;
 this.wn_senha=se;
-this.wn_saldo=(this.wn_saldo*8)/100;
+this.wn_saldo=(6*8)/100;
 }
 
 

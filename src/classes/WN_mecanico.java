@@ -40,7 +40,7 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_telefone=t;
 
-this.wn_FGTS=(this.wn_saldo*8)/100;
+this.wn_FGTS=(6*8)/100;
 
 }
 
