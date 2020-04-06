@@ -11,7 +11,12 @@ package classes;
  */
 public class WN_vendedor extends WN_funcionarios {
  
-   
+    @Override 
+  public double FGTS(){ 
+return this.wn_saldo*50/100;
+
+
+}
     
     @Override
     public double wn_h_extra() {
@@ -24,7 +29,7 @@ this.wn_saldo=s;
 this.wn_HT=ht;
 this.wn_cpf=cpf;
 this.wn_horaextra=hx;
-this.wn_FGTS=(6*8)/100;
+
 
 
 

@@ -34,10 +34,7 @@ public class Concessrionaria {
      */
     public static void main(String[] args) {
     WN_janela janela=new WN_janela();
-        
-        
-    
-    
+   
     
     
     

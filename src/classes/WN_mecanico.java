@@ -23,7 +23,12 @@ return this.wn_telefone;
 }
 
 
+ @Override 
+  public double FGTS(){ 
+return this.wn_saldo*50/100;
 
+
+}
 
    
     
@@ -40,7 +45,7 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_telefone=t;
 
-this.wn_FGTS=(6*8)/100;
+
 
 }
 

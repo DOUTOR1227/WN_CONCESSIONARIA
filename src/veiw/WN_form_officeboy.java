@@ -95,7 +95,7 @@ add(label);
      String texto = "nome: "+off.getwn_nome()+"\n saldo: "+off.getwn_saldo()+
      "\n horas trabalhadas: "+off.getwn_HT()+"\n cpf: " +off.getwn_cpf()+
       "\n horaextra: "+off.getwn_horaextra()+"\n usuario: "+off.getwn_usuario()+
-       "\n senha: "+off.getwn_senha()+"\n FGTS: "+off.getwn_FGTS();       
+       "\n senha: "+off.getwn_senha()+"\n FGTS: "+off.FGTS();       
      
      
      

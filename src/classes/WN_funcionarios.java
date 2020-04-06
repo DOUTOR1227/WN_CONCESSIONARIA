@@ -15,12 +15,10 @@ public abstract class WN_funcionarios {
    protected int wn_HT;
    protected String wn_cpf;
    protected double wn_horaextra;
-   protected double wn_FGTS=0;
+
   
    
-   public double getwn_FGTS(){
-   return this.wn_FGTS=(this.wn_saldo*50)/100;
-   }
+   
    
    public void setwn_nome(String nome){
    this.wn_nome=nome;
@@ -32,16 +30,17 @@ public abstract class WN_funcionarios {
    public void setwn_saldo(double wnsaldo){
    this.wn_saldo=wnsaldo;
    }
+  
    public double getwn_saldo(){
    if(this.wn_horaextra>0){
-    return this.wn_saldo - this.wn_FGTS+wn_h_extra();
+    return this.wn_saldo-FGTS()+wn_h_extra();
    
    }else{
    
-   return this.wn_saldo-this.wn_FGTS;
+   return this.wn_saldo-FGTS();
    }
        
-   
+ 
    
    
    }
@@ -69,13 +68,13 @@ public abstract class WN_funcionarios {
    return this.wn_horaextra;
    
    }
-  
+   
    
    
    public abstract double wn_h_extra();
    
    
-   
+   public abstract double FGTS();
    
    
    

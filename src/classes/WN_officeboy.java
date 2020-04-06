@@ -14,6 +14,8 @@ public class WN_officeboy extends WN_funcionarios {
     private String wn_senha;
 
 
+  
+    
     @Override
     public double wn_h_extra() {
        return (6)*8/100;
@@ -39,7 +41,12 @@ return this.wn_senha;
 
 }
 
+ @Override 
+  public double FGTS(){ 
+return this.wn_saldo*50/100;
 
+
+}
 public WN_officeboy(String n, double s, int ht, String cpf, double hx, String u, String se){
 this.wn_nome=n;
 this.wn_saldo=s;
@@ -48,8 +55,8 @@ this.wn_cpf=cpf;
 this.wn_horaextra=hx;
 this.wn_usuario=u;
 this.wn_senha=se;
-this.wn_FGTS=(this.wn_saldo*10)/100;
 
+ 
 }
 
 

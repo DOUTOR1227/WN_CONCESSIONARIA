@@ -14,6 +14,10 @@ public class WN_gerente extends WN_funcionarios {
   private String wn_senha;
 private int wn_telefone;
 
+    public WN_gerente() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 public void setwn_usuario(String wnusuario){
 this.wn_usuario=wnusuario;
 }
@@ -55,6 +59,7 @@ this.wn_horaextra=hx;
 this.wn_usuario=u;
 this.wn_senha=se;
 
+
 }
 
 
@@ -67,8 +72,9 @@ this.wn_senha=se;
    return (6)*8/100;
     }
 
-public double FGTS(){ 
-return (this.wn_saldo*50)/100;
+  @Override 
+  public double FGTS(){ 
+return this.wn_saldo*50/100;
 
 
 }
