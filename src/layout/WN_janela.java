@@ -21,9 +21,11 @@ public class WN_janela extends JFrame{
     getContentPane().add(new WN_rodape(),BorderLayout.SOUTH);
    getContentPane().add(new WN_direita(),BorderLayout.EAST);
     getContentPane().add(new WN_esquerda(),BorderLayout.WEST);
+   
+     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     pack();
     show();
-   
+  
     
     
     

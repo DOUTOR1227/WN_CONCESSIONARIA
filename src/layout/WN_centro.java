@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 public class WN_centro extends JPanel {
 public WN_centro(){
 setLayout(new GridLayout(2,2));
-    add(new WN_form_gerente());
+   add(new WN_form_gerente());
 add(new WN_form_vendedor());
 add(new WN_form_officeboy());
 add(new WN_form_mecanico());

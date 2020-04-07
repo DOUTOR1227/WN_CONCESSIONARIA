@@ -25,7 +25,7 @@ return this.wn_telefone;
 
  @Override 
   public double FGTS(){ 
-return this.wn_saldo*50/100;
+return this.wn_saldo*10/100;
 
 
 }
@@ -34,7 +34,7 @@ return this.wn_saldo*50/100;
     
     @Override
     public double wn_h_extra() {
-   return (6)*8/100;
+  return this.wn_saldo*2/100;
     }
 
 public WN_mecanico(String n, double s, int ht, String cpf, double hx, int t){
