@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/classes/WN_vendas.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/classes/WN_controladoria.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/principal/Concessrionaria.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/classes/WN_vendedor.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/classes/WN_officeboy.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/classes/WN_funcionarios.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_concessionaria/src/classes/WN_peças.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/layout/WN_rodape.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/principal/Concessrionaria.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/classes/WN_vendas.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/veiw/WN_form_vendas.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/layout/WN_janela.java</file>
         </group>
     </open-files>
 </project-private>

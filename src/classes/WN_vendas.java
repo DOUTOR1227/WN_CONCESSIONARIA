@@ -10,13 +10,23 @@ package classes;
  * @author 201816992
  */
 public class WN_vendas {
+  public String wn_carro;
     public int wn_Nvendasdia;
     public int wn_Nvendasmes;
     public int wn_Nvendasano;
     public double wn_preço;
     public int wn_estoque;
 
-public void setwn_Nvendasdia(int wnvendasdia){
+public void setwn_carro(String carro){
+this.wn_carro=carro;
+}
+    
+   public String getwn_carro(){
+   return this.wn_carro;
+   } 
+    
+    
+    public void setwn_Nvendasdia(int wnvendasdia){
 this.wn_Nvendasdia=wnvendasdia;
 }
 
@@ -57,13 +67,13 @@ return this.wn_preço-100;
 }
 
 
-public WN_vendas(int vendasdia, int vendasmes, int vendasano, double preço, int estoque){
+public WN_vendas(int vendasdia, int vendasmes, int vendasano, double preço, int estoque, String carro){
 this.wn_Nvendasano=vendasano;
 this.wn_Nvendasdia=vendasdia;
 this.wn_Nvendasmes=vendasmes;
 this.wn_estoque=estoque;
 this.wn_preço=preço;
-
+this.wn_carro=carro;
 
 
 
