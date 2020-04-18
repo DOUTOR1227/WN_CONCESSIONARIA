@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_controladoria;
+import dao.controladoriaDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -77,10 +78,9 @@ add(label);
    
     WN_controladoria controladoria = new WN_controladoria(valor_lucros, valor_salariofuncionario, valor_cofre, valor_compras, valor_manutenção);
     
-     String texto ="lucros: "+controladoria.getwn_lucros()+"\n salario dos funcionarios: "+controladoria.getwn_salariofuncionario()+
-    "\n cofre: "+controladoria.getwn_cofre()+"\ncompras: "+controladoria.getwn_compras()+"\nmanutenção: "+controladoria.getwn_manutenção();
+     controladoriaDAO.adicionar(controladoria);
     
-    JOptionPane.showMessageDialog(null, texto);
+   
     
     
     

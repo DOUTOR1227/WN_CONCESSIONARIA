@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_gerente;
+import dao.gerenteDAO;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.TextField;
@@ -105,17 +106,7 @@ add(label);
         
      WN_gerente gerente= new WN_gerente(valor_nome, valor_saldo, valor_HT, valor_cpf, valor_horaextra, valor_usuario, valor_senha, valor_telefone);
     
-     String texto = "nome: "+gerente.getwn_nome()+"\n saldo: "+gerente.getwn_saldo()+
-     "\n horas trabalhadas: "+gerente.getwn_HT()+"\n cpf: " +gerente.getwn_cpf()+
-      "\n horaextra: "+gerente.getwn_horaextra()+"\n usuario: "+gerente.getwn_usuario()+
-       "\n senha: "+gerente.getwn_senha()+"\ntelefone: "+gerente.getwn_telefone()+
-             "\n FGTS: "+gerente.FGTS();       
-     
-     
-     
-     
-      JOptionPane.showMessageDialog(null, texto);
-    
+    gerenteDAO.adicionar(gerente);
     }
     
 

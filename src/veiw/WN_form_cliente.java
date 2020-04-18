@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_cliente;
+import dao.clienteDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -79,13 +80,12 @@ add(score);
     
    
    WN_cliente cliente = new WN_cliente(valor_nome, valor_cpf, valor_rg, valor_endereço, valor_renda, valor_score); 
+  
+   clienteDAO.adicionar(cliente);
    
    
-    String texto = "nome: "+cliente.getwn_nome()+"\n renda: "+cliente.getwn_renda()+
-    "\n cpf: "+cliente.getwn_cpf()+"\n rg: "+cliente.getwn_rg()+
-    "\n endereço: "+cliente.getwn_endereço()+"\n score: "+cliente.getwn_score();       
-   
-      JOptionPane.showMessageDialog(null, texto);
+    
+     
    
       
    

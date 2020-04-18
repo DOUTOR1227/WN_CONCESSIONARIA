@@ -60,8 +60,8 @@ this.wn_score= wnscore;
 
 }
 
-public String getwn_score(){
-return this.wn_score+wn_analisedecradito();
+public int getwn_score(){
+return this.wn_score;
 }
 
 
@@ -79,8 +79,8 @@ this.wn_renda= wnrenda;
 
 }
 
-public String getwn_renda(){
-return this.wn_renda+entrada();
+public double getwn_renda(){
+return this.wn_renda;
 }
 
 
