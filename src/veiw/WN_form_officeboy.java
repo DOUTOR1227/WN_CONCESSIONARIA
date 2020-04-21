@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_officeboy;
+import dao.officeboyDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -92,15 +93,7 @@ add(label);
         
        WN_officeboy off =new WN_officeboy(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra,valor_usuario,valor_senha); 
         
-     String texto = "nome: "+off.getwn_nome()+"\n saldo: "+off.getwn_saldo()+
-     "\n horas trabalhadas: "+off.getwn_HT()+"\n cpf: " +off.getwn_cpf()+
-      "\n horaextra: "+off.getwn_horaextra()+"\n usuario: "+off.getwn_usuario()+
-       "\n senha: "+off.getwn_senha()+"\n FGTS: "+off.FGTS();       
-     
-     
-     
-     
-      JOptionPane.showMessageDialog(null, texto);    
+    officeboyDAO.adicionar(off);
         
         
         

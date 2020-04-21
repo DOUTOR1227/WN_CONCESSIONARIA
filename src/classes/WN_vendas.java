@@ -46,7 +46,7 @@ public void setwn_estoque(int wnestoque){
 this.wn_estoque=wnestoque;
 }
 
-public double getwn_estoque(){
+public int getwn_estoque(){
 return this.wn_estoque;
 
 }

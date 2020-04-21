@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_peças;
+import dao.peçasDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -71,13 +72,7 @@ public class WN_form_peças extends JPanel implements ActionListener {
     
     WN_peças peça =new WN_peças(valor_estoque, valor_preço,valor_usada, valor_tempodeuso, valor_modelo);
     
-    String texto="estoque: "+peça.getwn_estoque()+"\n modelo: "+peça.getwn_modelo()+"\n usada: "+peça.getwn_usada()+
-    "\n tempo de uso: "+peça.getwn_tempodeuso()+"\n preço: "+peça.getwn_preço();
-    
-    
-    
-     JOptionPane.showMessageDialog(null, texto);
-    
+   peçasDAO.adicionar(peça);
     
     }
 

@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_vendas;
+import dao.vendasDAO;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -33,7 +34,7 @@ public WN_form_vendas(){
  JLabel lbcarro= new JLabel("carro:");   
  JLabel lbvendasdia = new JLabel("vendas no dia:");
         JLabel lbestoque = new JLabel("estoque:");
-        JLabel lbvendasmes = new JLabel("vendas no mes:");
+        JLabel lbvendasmes = new JLabel("vendas no mes passado:");
         JLabel lbvendasano = new JLabel("vendas por ano:");
         JLabel lbpreço= new JLabel("preço:");
    carro = new JTextField(10);
@@ -74,11 +75,7 @@ add(label);
     
     WN_vendas vendas = new WN_vendas(valor_vendasdia,valor_vendasmes,valor_vendasano,valor_preço,valor_estoque,valor_carro);
     
-    String texto = "carro: "+vendas.getwn_carro()+"\nvendas por dia: "+vendas.getwn_Nvendasdia()+"\n vendas por mes: "+vendas.getwn_Nvendasmes()
-    +"\n  vendas por ano: "+vendas.getwn_Nvendasano()+"\n preço: "+vendas.getwn_preço()+"\n estoque: "+vendas.getwn_estoque();
-    
-    JOptionPane.showMessageDialog(null, texto);
-    
+   vendasDAO.adicionar(vendas);
     
     }
 

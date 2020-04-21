@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_vendedor;
+import dao.vendedorDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -77,10 +78,7 @@ botao.addActionListener(this);
         
     
     WN_vendedor vendedor=new WN_vendedor(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra);
-         String texto = "nome: "+vendedor.getwn_nome()+"\n saldo: "+vendedor.getwn_saldo()+"\n horas trabalhadas: "+vendedor.getwn_HT()+
-     "\n FGTS: "+vendedor.FGTS()+"\n cpf: "+vendedor.getwn_cpf()+"\n hora extra: "+vendedor.getwn_horaextra();
-    
-     JOptionPane.showMessageDialog(null, texto);
+        vendedorDAO.adicionar(vendedor);
     
     
     }

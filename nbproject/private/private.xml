@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/classes/WN_gerente.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/classes/WN_vendas.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/veiw/WN_form_vendas.java</file>
             <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/dao/ConexaoDB.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/classes/WN_funcionarios.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/dao/controladoriaDAO.java</file>
-            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/dao/gerenteDAO.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/dao/clienteDAO.java</file>
+            <file>file:/D:/wallison/META/progamação/java/WN_CONCESSIONARIA/src/dao/vendasDAO.java</file>
         </group>
     </open-files>
 </project-private>

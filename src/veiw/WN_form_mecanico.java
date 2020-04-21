@@ -6,6 +6,7 @@
 package veiw;
 
 import classes.WN_mecanico;
+import dao.mecanicoDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -91,10 +92,7 @@ botao.addActionListener(this);
       
         
         WN_mecanico mecanico = new WN_mecanico(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra,valor_telefone);
-         String texto = "nome: "+mecanico.getwn_nome()+"\n saldo: "+mecanico.getwn_saldo()+"\ntelefone: "+mecanico.getwn_telefone()+
-        "\n horas trabalhadas: "+mecanico.getwn_HT()+"\n FGTS:"+mecanico.FGTS()+"\ncpf: "+mecanico.getwn_cpf()+"\n hora extra: "+mecanico.getwn_horaextra();
-    
-    JOptionPane.showMessageDialog(null, texto);  
+         mecanicoDAO.adicionar(mecanico);
     
     }
  
