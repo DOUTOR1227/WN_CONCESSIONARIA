@@ -48,7 +48,9 @@ public class mecanicoDAO {
     }
     
     
-    
+    public static void atualizar(){}
+ public static void excluir(){}
+ public static void listar(){}
     
     
     

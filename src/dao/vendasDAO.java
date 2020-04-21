@@ -53,18 +53,14 @@ public class vendasDAO {
        
        
        
-        
-        
+      }
     
     
     
     
-    }
-    
-    
-    
-    
-    
+    public static void atualizar(){}
+ public static void excluir(){}
+ public static void listar(){}
     
     
     
