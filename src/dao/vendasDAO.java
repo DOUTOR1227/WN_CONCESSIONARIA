@@ -5,7 +5,7 @@
  */
 package dao;
 
-import classes.WN_vendas;
+import bean.WN_vendas;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 

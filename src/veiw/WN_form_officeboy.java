@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_officeboy;
+import bean.WN_officeboy;
 import dao.officeboyDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

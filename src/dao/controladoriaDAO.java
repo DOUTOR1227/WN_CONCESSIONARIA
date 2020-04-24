@@ -5,7 +5,7 @@
  */
 package dao;
 
-import classes.WN_controladoria;
+import bean.WN_controladoria;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 

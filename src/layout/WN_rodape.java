@@ -14,10 +14,7 @@ import javax.swing.JPanel;
  */
 public class WN_rodape extends JPanel {
 
-    public WN_rodape(){
-    add(new WN_form_vendas());   
-    }
-     
+  
 
 
 

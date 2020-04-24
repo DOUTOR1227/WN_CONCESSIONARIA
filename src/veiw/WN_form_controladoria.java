@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_controladoria;
+import bean.WN_controladoria;
 import dao.controladoriaDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

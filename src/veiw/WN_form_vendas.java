@@ -5,8 +5,9 @@
  */
 package veiw;
 
-import classes.WN_vendas;
+import bean.WN_vendas;
 import dao.vendasDAO;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -30,7 +31,9 @@ public class WN_form_vendas extends JPanel implements ActionListener {
     
     
 public WN_form_vendas(){
- JLabel label = new JLabel("form_vendas");
+
+    setLayout(new GridLayout(7,1));
+    JLabel label = new JLabel("form_vendas");
  JLabel lbcarro= new JLabel("carro:");   
  JLabel lbvendasdia = new JLabel("vendas no dia:");
         JLabel lbestoque = new JLabel("estoque:");

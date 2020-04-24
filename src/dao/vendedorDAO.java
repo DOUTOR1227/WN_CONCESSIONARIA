@@ -5,7 +5,7 @@
  */
 package dao;
 
-import classes.WN_vendedor;
+import bean.WN_vendedor;
 import static dao.ConexaoDB.retornaconexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

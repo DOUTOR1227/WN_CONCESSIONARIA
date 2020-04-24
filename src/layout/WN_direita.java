@@ -14,10 +14,7 @@ import javax.swing.JPanel;
  */
 public class WN_direita extends JPanel{
  
-    public WN_direita(){
-    add(new WN_form_peças());
-    
-    }
+   
     
     
     

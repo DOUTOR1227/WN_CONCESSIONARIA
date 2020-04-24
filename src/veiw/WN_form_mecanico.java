@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_mecanico;
+import bean.WN_mecanico;
 import dao.mecanicoDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

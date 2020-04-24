@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_peças;
+import bean.WN_peças;
 import dao.peçasDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

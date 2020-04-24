@@ -6,8 +6,8 @@
  */
 package principal;
 
-import classes.WN_cliente;
-import classes.WN_gerente;
+import bean.WN_cliente;
+import bean.WN_gerente;
 import layout.WN_janela;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -33,7 +33,8 @@ public class Concessrionaria {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    WN_janela janela=new WN_janela();
+   
+        WN_janela janela=new WN_janela();
    
     
     

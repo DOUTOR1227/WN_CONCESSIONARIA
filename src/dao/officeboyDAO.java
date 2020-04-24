@@ -5,7 +5,7 @@
  */
 package dao;
 
-import classes.WN_officeboy;
+import bean.WN_officeboy;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 

@@ -5,7 +5,7 @@
  */
 package dao;
 
-import classes.WN_gerente;
+import bean.WN_gerente;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 

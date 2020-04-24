@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_gerente;
+import bean.WN_gerente;
 import dao.gerenteDAO;
 import java.awt.Font;
 import java.awt.GridLayout;

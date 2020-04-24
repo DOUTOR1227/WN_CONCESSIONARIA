@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_cliente;
+import bean.WN_cliente;
 import dao.clienteDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -31,7 +31,7 @@ public class WN_form_cliente extends JPanel implements ActionListener{
    
     
  public  WN_form_cliente(){
-     //setLayout(new GridLayout(7,1));
+     setLayout(new GridLayout(7,1));
      JLabel label =new JLabel("form_cliente");
      JLabel lbnome = new JLabel("nome:");
       JLabel lbrenda = new JLabel("renda:");

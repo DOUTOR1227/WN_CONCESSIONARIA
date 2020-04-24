@@ -13,11 +13,6 @@ import javax.swing.JPanel;
  * @author Wallison
  */
 public class WN_esquerda extends JPanel{
-public WN_esquerda(){
-add(new WN_form_controladoria());
-
-
-}    
 
 
 }

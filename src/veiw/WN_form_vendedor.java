@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import classes.WN_vendedor;
+import bean.WN_vendedor;
 import dao.vendedorDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

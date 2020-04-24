@@ -5,7 +5,7 @@
  */
 package dao;
 
-import classes.WN_mecanico;
+import bean.WN_mecanico;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
