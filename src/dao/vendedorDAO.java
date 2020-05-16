@@ -5,7 +5,7 @@
  */
 package dao;
 
-import bean.WN_vendedor;
+import bean.vendedorBEAN;
 import static dao.ConexaoDB.retornaconexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
  * @author Wallison
  */
 public class vendedorDAO {
-    public static void adicionar(WN_vendedor vendedor){
+    public static void adicionar(vendedorBEAN vendedor){
     String sql = "insert into wn_vendedor(nome,saldo,horas_trabalhadas,cpf,hora_extra) \n" +
 "values (?,?,?,?,?)";
     Connection conexao = null;

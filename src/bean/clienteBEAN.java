@@ -17,14 +17,26 @@ package bean;
  * @author Wallison
  * 
  */
-public class WN_cliente {
-    
+public class clienteBEAN {
+  
+private int id;    
 private String wn_nome;
 private String wn_cpf;
 private String wn_rg;
 private String wn_endereço;
 private double wn_renda;
 private int wn_score;
+
+
+public void setid(int id){
+this.id=id;
+
+}
+public int getid(){
+return this.id;
+
+}
+
 
 public void setwn_nome(String wnnome){
 this.wn_nome= wnnome;
@@ -110,7 +122,7 @@ if(this.wn_renda<3000){
 }
 
 
-public WN_cliente(String nome, String cpf, String rg, String endereço, double renda, int score){
+public clienteBEAN(String nome, String cpf, String rg, String endereço, double renda, int score){
 this.wn_nome=nome;
 this.wn_cpf=cpf;
 this.wn_rg=rg;

@@ -10,12 +10,22 @@ package bean;
  * @author Wallison
  */
 public class WN_controladoria {
+   public int id;
     public double wn_lucros;
     public double wn_salariofuncionario;
     public double wn_cofre;
     public double wn_compras;
     public double wn_manutenção;
 
+    public void getid(int id){
+this.id=id;
+
+}
+public int getid(){
+return this.id;
+
+}
+    
 public void setwn_lucros(double wnlucros){
 this.wn_lucros=wnlucros;
 }

@@ -15,7 +15,16 @@ public abstract class WN_funcionarios {
    protected int wn_HT;
    protected String wn_cpf;
    protected double wn_horaextra;
+protected int id;
 
+public void getid(int id){
+this.id=id;
+
+}
+public int getid(){
+return this.id;
+
+}
   
    
    

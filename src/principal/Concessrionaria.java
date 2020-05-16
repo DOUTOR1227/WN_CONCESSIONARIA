@@ -6,7 +6,7 @@
  */
 package principal;
 
-import bean.WN_cliente;
+import bean.clienteBEAN;
 import bean.WN_gerente;
 import layout.WN_janela;
 import java.awt.BorderLayout;

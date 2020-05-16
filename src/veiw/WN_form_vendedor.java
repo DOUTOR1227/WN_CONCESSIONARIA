@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import bean.WN_vendedor;
+import bean.vendedorBEAN;
 import dao.vendedorDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -77,7 +77,7 @@ botao.addActionListener(this);
          double valor_horaextra=Double.parseDouble(horaextra.getText()) ;
         
     
-    WN_vendedor vendedor=new WN_vendedor(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra);
+    vendedorBEAN vendedor=new vendedorBEAN(valor_nome,valor_saldo,valor_HT,valor_cpf,valor_horaextra);
         vendedorDAO.adicionar(vendedor);
     
     

@@ -9,7 +9,7 @@ package bean;
  *
  * @author Wallison
  */
-public class WN_vendedor extends WN_funcionarios {
+public class vendedorBEAN extends WN_funcionarios {
  
     @Override 
   public double FGTS(){ 
@@ -23,7 +23,7 @@ return this.wn_saldo*10/100;
   return this.wn_saldo*2/100;
     }   
 
-public WN_vendedor(String n, double s, int ht, String cpf, double hx){
+public vendedorBEAN(String n, double s, int ht, String cpf, double hx){
 this.wn_nome=n;
 this.wn_saldo=s;
 this.wn_HT=ht;

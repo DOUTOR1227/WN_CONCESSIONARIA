@@ -5,7 +5,7 @@
  */
 package veiw;
 
-import bean.WN_cliente;
+import bean.clienteBEAN;
 import dao.clienteDAO;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -79,7 +79,7 @@ add(score);
     
     
    
-   WN_cliente cliente = new WN_cliente(valor_nome, valor_cpf, valor_rg, valor_endereço, valor_renda, valor_score); 
+   clienteBEAN cliente = new clienteBEAN(valor_nome, valor_cpf, valor_rg, valor_endereço, valor_renda, valor_score); 
   
    clienteDAO.adicionar(cliente);
    

@@ -10,12 +10,24 @@ package bean;
  * @author Wallison
  */
 public class WN_peças {
-    
+    public int id;
 public int wn_estoque;
 public double wn_preço;
 public String wn_usada;
 public int wn_tempodeuso;
 public String wn_modelo;
+
+
+public void getid(int id){
+this.id=id;
+
+}
+public int getid(){
+return this.id;
+
+}
+
+
 
 public void setwn_estoque(int wnestoque){
 this.wn_estoque=wnestoque;

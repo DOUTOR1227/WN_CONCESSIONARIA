@@ -16,7 +16,18 @@ public class WN_vendas {
     public int wn_Nvendasano;
     public double wn_preço;
     public int wn_estoque;
+public int id;
 
+
+public void getid(int id){
+this.id=id;
+
+}
+public int getid(){
+return this.id;
+
+}
+    
 public void setwn_carro(String carro){
 this.wn_carro=carro;
 }
